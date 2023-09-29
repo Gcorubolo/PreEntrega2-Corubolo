@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+section{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+}
+
+.mapa_envios{
+    display: flex;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    max-height: 95%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        margin-right: 2%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #f5f2f2;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+
+
+
+/*footer*/
+footer {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-end;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+    bottom: 0; /* Alinea el footer en la parte inferior */
+    width: 100vw; /* Ancho del footer igual al 100% del contenedor padre */
+    position: relative;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+footer a:hover {
+    color: #ececec;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33,33%;
+    height: 100%;
+    color: #fffafa;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33,33%;
+    height: 100%;
+    color: #fffafa;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    color: #fffafa;
+}
+
+footer h5{
+    color: #fffafa;
+}
+
+footer p {
+    color: #fffafa;
+    /* size-adjust: 0.5; */
+}
+
+.container-fluid{
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
